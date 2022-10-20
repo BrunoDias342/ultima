@@ -1,0 +1,15 @@
+'''
+Criei um programa que possua as variáveis A, B e C.
+Imprima o resultado de A + B caso ele seja menor do que C, caso contrário imprima que o valor é menor. Teste a aplicação com alguns valores nas variáveis sugeridas.
+'''
+
+variavela = int(input("digite um numero "))
+variavelb = int(input("digite um numro "))
+variavelc = int(input("digite um numero"))
+
+soma = variavela + variavelb
+
+if soma > variavelc:
+    print(f"o resultado é:{soma} ")
+else:
+    print("o valor de c é menor que a+b")
