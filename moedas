@@ -1,0 +1,9 @@
+# contar moedas do caixa
+
+cinco_centavos = float (35 * 0.05 )
+dez_centavos = float (0.10 * 50)
+vinteecinco_centavos = float (0.25 * 30)
+cinquenta_centavos = float (0.50 * 15)
+um_real = float (1 * 19)
+resultado = cinco_centavos + dez_centavos + vinteecinco_centavos + cinquenta_centavos + um_real
+print("seu resultado e de", resultado , "reais")
