@@ -1,0 +1,20 @@
+'''
+Criei um programa que calcule o peso ideal de uma pessoa. Para isso utilize as fórmulas da tabela:
+Para Homens: (72.7 * altura) – 58
+Para Mulheres: (62.1 * altura) – 44.7 
+Sua aplicação deve identificar se a pessoa é Homem ou Mulher e então fazer o cálculo apropriado. 
+Deve ser impresso se a pessoa é homem ou mulher,juntamente com o peso ideal calculado.
+'''
+
+nome = input("qual seu nome? ")
+genero = input("qual seu genero? (ex: homem/mulher " )
+altura = float(input("qual sua altura? " ))
+
+homem = ( 72.7 * altura) -58
+mulher = ( 62.1 * altura) -44.7
+
+if genero == homem:
+    print(f"{nome} seu peso ideal é {homem:.2f}")
+
+else :
+    print(f"{nome} seu peso ideal é {mulher:.2f}")
