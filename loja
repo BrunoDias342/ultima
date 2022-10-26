@@ -1,0 +1,28 @@
+'''
+Uma loja de móveis está com dificuldades de calcular algumas condições de pagamento de seus móveis. Eles possuem algumas regras e o seu trabalho 
+é implementar uma aplicação que faça os cálculos de acordo com as regras:
+À vista em dinheiro, recebe 15% de desconto
+À vista no cartão de crédito, recebe 10% de desconto
+Em duas vezes, preço normal de etiqueta sem juros
+Mais de duas vezes, preço normal de etiqueta mais juros de 10%
+'''
+
+
+vetiqueta = float(input(" Digite o valor da etiqueta "))
+fpagamento = input(" Qual sera a forma de pagamento ? [dinheiro/cartao/parcelado] ").lower()
+
+
+if fpagamento == 'parcelado' :
+    parcela = int(input(" Em quantas vezes ? "))
+
+    if parcela <= 2 :
+       print(f"Em ate duas vezes não temos juros, o valor do produto é R${vetiqueta} ")
+
+    elif parcela >= 3 :
+         print(f"em {parcela} vezes temos juros de 10%, o valor do produto ficara R${vetiqueta+(vetiqueta*10/100)} ")
+
+if fpagamento == "dinheiro" :
+    print(f" A vista em Dinheiro temos o desconto de 15%, e o valor do produto ficara R${vetiqueta-(vetiqueta*15/100)} ")
+
+elif fpagamento == "cartao" :
+    print(f"A vista no cartao temos 10% de desconto, o valor do produto ficara R${vetiqueta-(vetiqueta*10/100)} ")
