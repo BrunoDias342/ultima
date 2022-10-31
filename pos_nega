@@ -1,0 +1,15 @@
+a = " "
+
+def positivo_negativo(n) :
+    global a
+
+    if n > 0 :
+        a = "P"
+        return a
+    else :
+        a = "N"
+        return a
+
+positivo_negativo (n = 10)
+
+print(a)
