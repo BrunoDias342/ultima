@@ -1,0 +1,13 @@
+def palavra_prefixo() :
+
+    palavra1 = input("Digite a primeira palavra ").strip().lower()
+    palavra2 = input(" Digite a segunda palavra ").strip().lower()
+    prefixo = palavra1[:3]
+
+    if prefixo in palavra2 :
+        print("True ")
+
+    else :
+        print("False")
+
+palavra_prefixo()
