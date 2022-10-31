@@ -1,0 +1,7 @@
+def somatorio(*args) :
+    soma = 0
+    for i in args :
+        soma += i
+
+    return soma
+print(somatorio(10,5,10,5,2,5))
